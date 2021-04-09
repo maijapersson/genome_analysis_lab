@@ -4,7 +4,7 @@
 #SBATCH -p core
 #SBATCH -n 2
 #SBATCH -t 16:00:00
-#SBATCH -J job_name
+#SBATCH -J genome_assembly
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user Maija.Persson.0100@student.uu.se
 # Load modules
