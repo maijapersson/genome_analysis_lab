@@ -1,1 +1,1 @@
-fastqc -o analyses/03_preprocessing analyses/03_preprocessing/ERR2036629_1P.fq.gz
+fastqc -o analyses/03_preprocessing/ analyses/03_preprocessing/ERR2036629_1P.fq.gz analyses/03_preprocessing/ERR2036629_1U.fq.gz analyses/03_preprocessing/ERR2036629_2P.fq.gz analyses/03_preprocessing/ERR2036629_2U.fq.gz
