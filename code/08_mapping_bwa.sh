@@ -21,5 +21,6 @@ do
 	PREFIX=${file%%_*}
 	echo "processing $PREFIX"
 	echo "${PREFIX}_P2.trim.fastq.gz"
-	bwa mem ../../../assembly_index $file ../RNA_trimmed_reads/${PREFIX}_P2.trim.fastq.gz -t 2 | samtools sort -o ../../../analyses/04_mapping_counting/$PREFIX.sorted.bam
+	bwa mem ../../../assembly_index $file ../RNA_trimmed_reads/${PREFIX}_P2.trim.fastq.gz -t 2 | samtools view -b - > ../../../analyses/04_mapping_counting/$PREFIX$        
+	samtools sort ../../../analyses/04_mapping_counting/$PREFIX.bam -o ../../../analyses/04_mapping_counting/$PREFIX.sorted.bam
 done
